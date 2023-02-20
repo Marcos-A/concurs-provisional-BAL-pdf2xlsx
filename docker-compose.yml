@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  pdf2xlsx:
+    container_name: pdf2xlsx
+    # Dockerfile location
+    build: .
+    # Mapping of container port to host
+    ports:
+      - 3000:3000
+    # Mount volume
+    volumes:
+      - .:/opt/pdf2xlsx
+    # Avoid the container exiting after running "docker-compose up"
+    # Set to true for developing and debugging sessions
+    tty: false
