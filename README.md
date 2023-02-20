@@ -1,8 +1,8 @@
 # concurs-provisional-BAL-pdf2xlsx
 
-[català]()#què-fa)
+[català](#què-fa)
 
-[english]()#deployment)
+[english](#deployment)
 
 ## Què fa
 
@@ -21,7 +21,7 @@ L'esmentada resolució de 3 de novembre de 2022 convoca el procés selectiu d'es
 
 Descarregar el repositori a un directori qualsevol amb permissos d'escriptura:
 
-`$ curl -O `
+`$ curl -O https://github.com/Marcos-A/concurs-provisional-BAL-pdf2xlsx.git`
 
 Crear la imatge i iniciar el contenidor:
 `$ docker-compose up --build -d`
@@ -40,7 +40,7 @@ Tan bon punt el contenidor estigui en execució, la aplicació s'executarà en s
 
 Download the repository to any directory with writing permissions:
 
-`$ curs -O`
+`$ curs -O https://github.com/Marcos-A/concurs-provisional-BAL-pdf2xlsx.git`
 
 Build the image and start the container:
 
