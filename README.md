@@ -17,6 +17,10 @@ A partir del PDF amb el llistat provisional d'aspirants admesos al concurs de m�
 
 L'esmentada resolució de 3 de novembre de 2022 convoca el procés selectiu d'estabilització, mitjançant el sistema excepcional de concurs de mèrits per a l'ingrés als cossos docents de professors d'ensenyament secundari, de professors d'escoles oficials d'idiomes, de professors de música i arts escèniques, de professors d'arts plàstiques i disseny, de mestres de taller d'arts plàstiques i disseny, de mestres i de professors especialistes en sectors singulars de formació professional a les Illes Balears.
 
+## Requisits
+
+- Docker.
+
 ## Desplegament
 
 Descarregar el repositori a un directori qualsevol amb permissos d'escriptura:
@@ -32,9 +36,17 @@ Tan bon punt el contenidor estigui en execució, la aplicació s'executarà en s
 
 - Llista provisional d'aspirants admesos: [Baremació Convocatòria extraordinària mèrits [PROVISIONAL] Punt 6.1 de la convocatôria](https://intranet.caib.es/sites/estabilitzacio/f/413838)
 
+## Fitxer resultant
+
+XLSX resultant disponible per la seva consulta a [bit.ly/concurs-prov-bal](https://docs.google.com/spreadsheets/d/1TMORKPcVO2CwsxkFuOdPb31-QATAuABh/edit?usp=sharing&ouid=115479152041016418632&rtpof=true&sd=true).
+
 ---
 
 ---
+
+## Requirements
+
+- Docker.
 
 ## Deployment
 

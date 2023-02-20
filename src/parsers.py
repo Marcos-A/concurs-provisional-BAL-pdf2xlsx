@@ -7,7 +7,7 @@ import re
 # Get candidate's name
 def extract_candidate_name(candidate_text):
     name_pattern = re.compile(
-        "[A-Za-zÀ-ú]+\s*[A-Za-zÀ-ú]*,\s+[A-Za-zÀ-ú]+\s*[A-Za-zÀ-ú]*(?<=[A-Za-zÀ-ú])")
+        "[A-Za-zÀ-ú-]+\s*[A-Za-zÀ-ú-]*,\s+[A-Za-zÀ-úª\.-]+\s*[A-Za-zÀ-úª\.-]*\s*[A-Za-zÀ-úª\.-]*\s*[A-Za-zÀ-úª\.-]*(?<=[A-Za-zÀ-úª\.-])")
     name = name_pattern.search(candidate_text).group()
     return name
 
