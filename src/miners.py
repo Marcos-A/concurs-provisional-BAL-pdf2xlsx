@@ -1,13 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 
-"""
-TODO: 
-- Add column indicating if candidate has other specialties
-  and his/her ranking position for everyone of them.
-- Add column with total available positions by specialty. (?)
-"""
-
 import numpy as np
 import pandas as pd
 from parsers import extract_candidate_name, \
