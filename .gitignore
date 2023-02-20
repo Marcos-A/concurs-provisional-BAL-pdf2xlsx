@@ -44,7 +44,7 @@ tika_server_files/
 data/
 
 # Processed files, keep folder
-processed/
+processed/*
 !processed/.gitkeep
 
 # Test files folder
