@@ -30,12 +30,11 @@ L'esmentada resolució de 3 de novembre de 2022 convoca el procés selectiu d'es
 
 ## Desplegament
 
-Descarregar el repositori a un directori qualsevol amb permissos d'escriptura:
+1. Descarregar el repositori a un directori qualsevol amb permissos d'escriptura:
+  `$ curl -O https://github.com/Marcos-A/concurs-provisional-BAL-pdf2xlsx.git`
 
-`$ curl -O https://github.com/Marcos-A/concurs-provisional-BAL-pdf2xlsx.git`
-
-Crear la imatge i iniciar el contenidor:
-`$ docker-compose up --build -d`
+2. Crear la imatge i iniciar el contenidor:
+  `$ docker-compose up --build -d`
 
 Tan bon punt el contenidor estigui en execució, la aplicació s'executarà en segon pla. El contenidor s'aturarà un cop s'exporti el fitxer XLSX resultant a la carpeta `processed`.
 
@@ -58,12 +57,10 @@ XLSX resultant disponible per la seva consulta a [bit.ly/concurs-prov-bal](https
 
 ## Deployment
 
-Download the repository to any directory with writing permissions:
-
+1. Download the repository to any directory with writing permissions:
 `$ curs -O https://github.com/Marcos-A/concurs-provisional-BAL-pdf2xlsx.git`
 
-Build the image and start the container:
-
+2. Build the image and start the container:
 `$ docker-compose up --build -d`
 
 As soon as the container starts, the application will run in dettached mode. The container will stop once the resulting XLSX file has been exported to the `processed` folder.
