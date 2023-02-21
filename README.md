@@ -1,8 +1,8 @@
 # concurs-provisional-BAL-pdf2xlsx
 
-[català](#què-fa)
+- [Català](#què-fa)
 
-[english](#deployment)
+- [English](#deployment)
 
 ## Què fa
 
@@ -16,6 +16,13 @@ A partir del PDF amb el llistat provisional d'aspirants admesos al concurs de m�
 - altres especialitats: Conté altres especialitats on l'aspirant ha estat admès/a, així com la seva posició respectiva a cadascuna d'elles.
 
 L'esmentada resolució de 3 de novembre de 2022 convoca el procés selectiu d'estabilització, mitjançant el sistema excepcional de concurs de mèrits per a l'ingrés als cossos docents de professors d'ensenyament secundari, de professors d'escoles oficials d'idiomes, de professors de música i arts escèniques, de professors d'arts plàstiques i disseny, de mestres de taller d'arts plàstiques i disseny, de mestres i de professors especialistes en sectors singulars de formació professional a les Illes Balears.
+
+## Limitacions
+
+- En cas d'empat de puntuació entre diversos aspirants a una mateixa especialitat, el llistat resultant no ordena aquests d'acord amb els criteris de desempat de la [convocatòria](https://www.caib.es/sites/estabilitzacio/f/405203) (Annex 1, punt 7.2, «Criteris de desempat»), sinó que ordena les seves posicions alfabèticament pel nom de l'aspirant.
+- En cas que un aspirant s'hagi presentat a més d'una especialitat, el llistat resultant no reflecteix l'ordre de preferència en què aquestes van ser demanades, donat que aquesta informació no ha estat publicada al llista provisional.
+- El llistat resultant no té en compte si l'aspirant s'ha presentat al concurs de mèrits del procés d'estabilització en altres comunitats autònomes.
+- Per últim, la natura del barem no és definitiva, atès que el llistat publicat és provisional i està subjecte a la possibilitat de reclamacions per part dels aspirants.
 
 ## Requisits
 
@@ -35,6 +42,7 @@ Tan bon punt el contenidor estigui en execució, la aplicació s'executarà en s
 ## Fonts
 
 - Llista provisional d'aspirants admesos: [Baremació Convocatòria extraordinària mèrits [PROVISIONAL] Punt 6.1 de la convocatôria](https://intranet.caib.es/sites/estabilitzacio/f/413838)
+- Resolució de 3 de novembre de 2022 per la qual es convoca el procés selectiu d'estabilització, mitjançant el sistema excepcional de concurs de mèrits per a l'ingrés als cossos docents de professors d'ensenyament secundari, de professors d'escoles oficials d'idiomes, de professors de música i arts escèniques, de professors d'arts plàstiques i disseny, de mestres de taller d'arts plàstiques i disseny, de mestres i de professors especialistes en sectors singulars de formació professional a les Illes Balears: [BOIB núm. 147, 15 de novembre de 2022](https://www.caib.es/sites/estabilitzacio/f/405203)
 
 ## Fitxer resultant
 
