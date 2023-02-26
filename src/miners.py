@@ -37,7 +37,7 @@ def create_df_from_text(text):
     df = df_sort_by_column_with_non_ascii_chars_and_regular_column(
                             df, "especialitat (nom)", "puntuació", regular_column_ascending=False)
     # Reassign index according to new sorting
-    df.reset_index(drop=True, inplace=True)
+    df = df.reset_index(drop=True)
     df = rank_candidates(df)
     df = add_other_specialties(df)
     df = df.drop("especialitat (codi)", axis=1)

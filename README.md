@@ -30,10 +30,10 @@ L'esmentada resolució de 3 de novembre de 2022 convoca el procés selectiu d'es
 
 ## Desplegament
 
-1. Descarregar el repositori a un directori qualsevol amb permissos d'escriptura:
+1. Descarregueu el repositori a un directori qualsevol amb permissos d'escriptura:
   `$ git clone https://github.com/Marcos-A/concurs-provisional-BAL-pdf2xlsx.git`
 
-2. Crear la imatge i iniciar el contenidor:
+2. Creeu la imatge i iniciar el contenidor:
   `$ docker-compose up --build -d`
 
 Tan bon punt el contenidor estigui en execució, la aplicació s'executarà en segon pla. El contenidor s'aturarà un cop s'exporti el fitxer XLSX resultant a la carpeta `processed`.
@@ -46,6 +46,28 @@ Tan bon punt el contenidor estigui en execució, la aplicació s'executarà en s
 ## Fitxer resultant
 
 XLSX resultant disponible per la seva consulta a [bit.ly/concurs-prov-bal](https://docs.google.com/spreadsheets/d/1TMORKPcVO2CwsxkFuOdPb31-QATAuABh/edit?usp=sharing&ouid=115479152041016418632&rtpof=true&sd=true).
+
+## Desenvolupament i depuració
+
+1. Al fitxer `Dockerfile` comenteu la següent línia:
+  `CMD ["python", "main.py"]`
+
+2. Al fitxer `docker-compose.yml` canvieu el valor de la variable `tty` per `true`.
+
+3. Creeu la imatge i inicieu el contenidor:
+  `$ docker-compose up --build -d`
+
+4. Accediu a la línia de comandaments del contenidor:
+  `$ docker exec -it pdf2xlsx bash`
+
+5. Existeixen 2 maneres d'executar el programa:
+   1. Sense arguments addicionals el programa llegirà el contingut en línia del fitxer PDF disponible a: [https://intranet.caib.es/sites/estabilitzacio/f/413838](https://intranet.caib.es/sites/estabilitzacio/f/413838). Executeu com a:
+     `$ python main.py`
+
+   2. Es pot afegir com a argument una altra URL o la ruta al fitxer PDF descarregat localment. Executeu com a:
+     `$ python main.py el_meu_fitxer.pdf`
+     o bé com a:
+     `$ python main.py https://llocweb.cat/fitxer-pdf`
 
 ---
 
@@ -68,3 +90,24 @@ As soon as the container starts, the application will run in dettached mode. The
 ## Sources
 
 - Provisional list of admitted applicants: [Baremació Convocatòria extraordinària mèrits [PROVISIONAL] Punt 6.1 de la convocatòria](https://intranet.caib.es/sites/estabilitzacio/f/413838)
+
+## Development and debugging
+1. In the `Dockerfile` comment out the following line :
+   `CMD ["python", "main.py"]`
+
+2. In the `docker-compose.yml` file set the variable `tty` to `true`. 
+
+3. Build the image and start the container:
+  `$ docker-compose up --build -d`
+
+4. Access the container bash:
+   `$ docker exec -it pdf2xlsx bash`
+
+5. There are 2 ways of running the program:
+   1. Without further arguments the program will read the online contents of the PDF file available at: [https://intranet.caib.es/sites/estabilitzacio/f/413838](https://intranet.caib.es/sites/estabilitzacio/f/413838). Run as:
+   `$ python main.py`
+   2. A new argument can be added including a different URL or the path to the locally downloaded PDF file. Run as:
+   `$ python main.py my_file.pdf`
+   or:
+   `$ python main.py https://website.com/pdf-file`
+   
